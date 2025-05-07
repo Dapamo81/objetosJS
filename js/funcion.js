@@ -45,3 +45,9 @@ function recorrer(){
     }
     componentesDiv.appendChild(listaValores);
 }
+function tercerExtra(){
+    const tercerExtra = ordenador.extras[2];
+    const extraMostrar = document.createElement("p");
+    extraMostrar.textContent = "El tercer extra del ordenador es: " + tercerExtra; 
+    componentesDiv.appendChild(extraMostrar);
+}

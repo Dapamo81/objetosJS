@@ -25,3 +25,23 @@ function frase(){
         console.error("Error, no se encontrarón características");
     }
 }
+
+function recorrer(){
+    const listaValores = document.createElement("ul");
+
+    for (const key in ordenador){
+        if (ordenador.hasOwnProperty(key)){
+            let valor = ordenador[key];
+            if(Array.isArray(valor)){
+                valor = valor.join(", ");
+            }
+            if(typeof valor === "boolean"){
+                valor = valor ? "Si" : "No";
+            }
+            const li = document.createElement("li");
+            li.textContent = key + ": " + valor;
+            listaValores.appendChild(li);
+        }
+    }
+    componentesDiv.appendChild(listaValores);
+}

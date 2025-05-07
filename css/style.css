@@ -3,4 +3,27 @@
     padding: 0px;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #cac8c8;
+}
+.container {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+p {
+    font-size: 1.1em;
+}
+.componentes {
+    margin-top: 20px;
+}
+
 

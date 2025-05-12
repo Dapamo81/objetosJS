@@ -9,9 +9,17 @@ const galletas = {
 const productoDiv = document.getElementById("producto");
 
 function mostrarObjeto(){
-    const producto = galletas.marca + ", " + galletas.nombre + ", " + galletas.descripción + ", " +  galletas.precio + " €."; 
+    let propiedades = "";
+    for (let key in galletas) {
+        propiedades += key + ": " + galletas[key] + ", ";
+    }
+    // Quitar la última coma y espacio
+    propiedades = propiedades.slice(0, -2);
     const resultado = document.createElement("p");
-    resultado.textContent= producto;
-
+    resultado.textContent= propiedades;
     productoDiv.appendChild(resultado);
+}
+function anadirOferta(){
+    galletas.oferta = true;
+    mostrarObjeto(galletas);
 }

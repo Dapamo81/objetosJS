@@ -1,33 +1,101 @@
-*{
-    margin:0px;
-    padding: 0px;
+/* Reset básico para eliminar márgenes y paddings predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Estilo para el body */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #cac8c8;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
-.container {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    max-width: 600px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-h1 {
+
+/* Estilo para el encabezado */
+header {
+    background-color: #4A90E2;
+    padding: 20px;
     text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* Estilo para la sección principal */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Estilo para cada target (contenedor de funcionalidades) */
+.target {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 300px;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.target:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Títulos dentro de cada target */
+.target h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
     color: #333;
 }
-p {
-    font-size: 1.1em;
-}
-.componentes {
-    margin-top: 20px;
+
+/* Estilo para los botones */
+button {
+    background-color: #4A90E2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-.target{
-    background-color: bisque;
-
+button:hover {
+    background-color: #357ABD;
+    transform: translateY(-2px);
 }
+
+/* Estilo para las áreas de contenido dinámico */
+.componentes, .producto {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    min-height: 50px;
+    border: 1px solid #ddd;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Estilos específicos para botones en las funciones */
+button:active {
+    transform: translateY(0);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+
+
+
 

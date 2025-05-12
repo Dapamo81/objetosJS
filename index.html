@@ -9,6 +9,7 @@
     <link href = "css/style.css" rel="stylesheet" type="text/css">
     <script src="js/funcionOrdenador.js" defer></script>
     <script src="js/funcionGalleta.js" defer></script>
+    <script src="js/funcionesConcesionario.js" defer></script>
 </head>
 <body>
     <header>
@@ -31,6 +32,19 @@
             <button onclick="mostrarValores()">Mostrar Valores</button>
             <button onclick="mostrarPropiedades()">Mostrar Porpiedades</button>
             <div class="producto" id="producto"></div>
+       </div>
+       <div class="target">
+            <h2>Concesionario de Coches</h2>
+            <label for="atributo">¿Qué quieres mostrar?</label>
+            <select id="atributo">
+                <option value="todos">Todos</option>
+                <option value="marca">Marca</option>
+                <option value="modelo">Modelo</option>
+                <option value="potencia">Potencia (CV)</option>
+                <option value="precio">Precio (€)</option>
+            </select>
+            <button onclick="mostrarDatos()">Mostrar</button>
+            <div id="resultados"></div>
        </div>
     </section>
     <footer>

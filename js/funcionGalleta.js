@@ -23,3 +23,8 @@ function anadirOferta(){
     galletas.oferta = true;
     mostrarObjeto(galletas);
 }
+
+function modificar(){
+    galletas.descripción ="galletas de mantequilla y azúcar";
+    mostrarObjeto(galletas);
+}
